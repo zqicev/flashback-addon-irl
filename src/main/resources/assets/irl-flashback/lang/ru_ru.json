@@ -1,0 +1,5 @@
+{
+    "flashback.keyframe.irl_light": "Источник IRL",
+    "flashback.keyframe.irl_light.none": "Нет источников IR Lights - откройте редактор IRL (J) и добавьте лампу",
+    "flashback.keyframe.irl_light.pick": "Выберите источник для управления:"
+}

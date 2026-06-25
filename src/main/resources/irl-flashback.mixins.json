@@ -1,0 +1,14 @@
+{
+    "required": true,
+    "minVersion": "0.8",
+    "package": "org.qualet.irlflashback.mixin",
+    "compatibilityLevel": "JAVA_21",
+    "client": [
+        "FlashbackGsonMixin",
+        "KeyframeTypeAdapterMixin",
+        "TimelineWindowMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}

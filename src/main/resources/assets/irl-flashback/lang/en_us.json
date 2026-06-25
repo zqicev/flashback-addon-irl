@@ -1,0 +1,5 @@
+{
+    "flashback.keyframe.irl_light": "IRL Light",
+    "flashback.keyframe.irl_light.none": "No IR Lights placed - open the IRL editor (J) and add a light first",
+    "flashback.keyframe.irl_light.pick": "Pick a light to control:"
+}
