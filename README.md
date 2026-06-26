@@ -10,15 +10,31 @@ animate in the editor preview and in the exported video.
 This is a standalone addon. It does **not** bundle or fork Flashback, and it adds nothing to vanilla
 Flashback when IR Lights is absent, so Flashback keeps working unchanged with or without it.
 
+## Minecraft versions
+
+One branch per Minecraft version, matching the IR Lights fork (Flashback does not exist below
+1.21.1). Check out the branch for your version, then build (see [Building](#building)).
+
+| Branch | Minecraft |
+|---|---|
+| `main` | 1.21.1 |
+| [`port/1.21.4`](../../tree/port/1.21.4) | 1.21.4 |
+| [`port/1.21.11`](../../tree/port/1.21.11) | 1.21.11 |
+
+For each you need the matching Flashback (the Modrinth jar for that Minecraft version) and the
+matching IR Lights branch `port/<version>-flashback` from
+[irl-editor-fixes-fork](https://github.com/zqicev/irl-editor-fixes-fork).
+
 ## Requirements
 
-- Minecraft 1.21.1, Fabric Loader, Fabric API
-- [Flashback](https://modrinth.com/mod/flashback)
+- Minecraft 1.21.1 / 1.21.4 / 1.21.11 (one branch each, see above), Fabric Loader, Fabric API
+- [Flashback](https://modrinth.com/mod/flashback) for your Minecraft version
 - **IR Lights with the Flashback bridge.** This addon talks to IR Lights through a small bridge API
-  that the public IR Lights builds do not ship. Build `irl-redactor` from the
-  [`port/1.21.1-flashback`](https://github.com/zqicev/irl-editor-fixes-fork/tree/port/1.21.1-flashback)
-  branch of `irl-editor-fixes-fork` (it also carries the Axiom and far-from-origin light fixes).
-  Without IR Lights present the addon stays inert and the IRL Light entry is hidden.
+  that the public IR Lights builds do not ship. Build `irl-redactor` from the matching
+  `port/<version>-flashback` branch of
+  [`irl-editor-fixes-fork`](https://github.com/zqicev/irl-editor-fixes-fork) (it also carries the
+  Axiom and far-from-origin light fixes). Without IR Lights present the addon stays inert and the
+  IRL Light entry is hidden.
 
 ## Usage
 
